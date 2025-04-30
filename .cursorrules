@@ -20,3 +20,32 @@ There are some pre-configured APIs in this template that can be used but only if
 - Deepgram
   - src/app/api/deepgram has transcribe-audio/route.ts which is a simple API that returns the Deepgram API key to be used in the client side to transcribe audio in real-time.
   - src/lib/contexts has a DeepgramContext.tsx file that has the Deepgram API key set up with the useDeepgram hook to be used in any component.
+
+# .cursorrules
+
+# UI/UX
+- Use Tailwind CSS for all UI elements and layout.
+- Center main content both vertically and horizontally using Flexbox or Grid.
+- All interactive elements (buttons, inputs) must use Tailwind classes for modern appearance.
+- Use container and max-w utilities for content width.
+- Use padding, margin, rounded, and shadow utilities for modern look.
+
+# Code Structure
+- Separate authentication logic from UI rendering.
+- Use React hooks for state and effect management.
+- Use component-based design for all major UI sections.
+
+# Animations
+- Use anime.js for UI animations.
+- Only trigger animations after Firebase auth state is ready and DOM is stable.
+
+# Accessibility
+- Use semantic HTML and accessible ARIA attributes where appropriate.
+
+# Next.js
+- Follow Next.js 14 App Router conventions for data fetching, rendering, and routing.
+- Place all project files in /src as per project structure.
+
+# Troubleshooting
+- If Tailwind styles do not load, check tailwind.config.js and global CSS imports.
+- If UI is not centered, verify parent containers use flex/grid and correct alignment classes.
