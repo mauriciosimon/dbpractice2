@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import { useAuth } from '../lib/hooks/useAuth';
+import { useAuth } from '../lib/contexts/AuthContext';
 import anime from 'animejs';
 
 export default function LoginPage() {
