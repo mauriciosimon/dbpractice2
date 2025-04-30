@@ -1,15 +1,17 @@
 'use client';
 
-import { ReactNode } from 'react';
-import { useAuth } from '@/lib/contexts/AuthContext';
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
+import { useAuth } from '@/lib/hooks/useAuth';
 import LoginPage from './LoginPage';
 
 interface ProtectedRouteProps {
-  children: ReactNode;
+  children: React.ReactNode;
 }
 
 export default function ProtectedRoute({ children }: ProtectedRouteProps) {
   const { user, loading } = useAuth();
+  const router = useRouter();
 
   if (loading) {
     return (
