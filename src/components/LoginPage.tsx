@@ -42,14 +42,9 @@ export default function LoginPage() {
   };
 
   return (
-    <div 
-      ref={containerRef}
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 opacity-0"
-    >
-      <div 
-        ref={contentRef}
-        className="max-w-md w-full mx-4 bg-white rounded-xl shadow-xl p-8 space-y-8 opacity-0"
-      >
+    // CSS Grid centering: display: grid, place-items: center, minHeight: 100vh
+    <div className="grid place-items-center min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+      <div className="container max-w-md mx-auto px-4 py-8 rounded-xl shadow-lg bg-white">
         <div className="text-center space-y-2">
           <h2 className="text-3xl font-bold text-gray-900">Welcome</h2>
           <p className="text-gray-600">

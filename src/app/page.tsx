@@ -64,14 +64,12 @@ export default function Home() {
     <ProtectedRoute>
       <AuthLoadingScreen isLoading={loading}>
         {/*
-          Flexbox centering:
-          - display: flex (flex)
-          - flexDirection: column (flex-col)
-          - justifyContent: center (justify-center)
-          - alignItems: center (items-center)
+          CSS Grid centering:
+          - display: grid (grid)
+          - place-items: center (place-items-center)
           - minHeight: 100vh (min-h-screen)
         */}
-        <div className="flex flex-col justify-center items-center min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+        <div className="grid place-items-center min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
           <div className="container max-w-2xl mx-auto px-4 py-8 rounded-xl shadow-lg bg-white">
             {/* Header Section */}
             <div 
